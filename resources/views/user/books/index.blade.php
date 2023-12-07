@@ -7,7 +7,6 @@
 @endsection
 
 @section('content')
-{{-- <a href="{{ route('books.create') }}">Create</a> --}}
 
 <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
     <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
@@ -47,7 +46,7 @@
                     {{ $book->publisher->name }}
                 </td>
                 {{-- <td class="px-6 py-4">
-                    <a href="{{ route('book.show', $book->id) }}" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    <a href="{{ route('user.book.show', $book->id) }}" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
                 </td> --}}
             </tr>
             @empty
